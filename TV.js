@@ -1,17 +1,17 @@
 async function Usuarios() {
-  const url = https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json
+  const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
   const res = await fetch(url)
   const dados = await res.json()
   const Rede = Object.keys(dados)
   const Usuarios = Object.values(dados)
   const data = [
     {
-  x: Redes,
+  x: Rede,
   y: Usuarios,
   type:'bar'
 }
 ]
-const grafico = document.createElement ('div")
+const grafico = document.createElement ('div')
 grafico.className = 'grafico'
 
 document.getelementById('grafico-container').appendChild(grafico)
