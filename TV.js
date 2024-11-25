@@ -14,8 +14,8 @@ async function Usuarios() {
 const grafico = document.createElement ('div')
 grafico.className = 'grafico'
 
-document.getelementById('grafico-container').appendChild(grafico)
-Plotly.newplot(grafico, data)
+document.getElementById('grafico-container').appendChild(grafico)
+Plotly.newPlot(grafico, data)
 
 }
 
